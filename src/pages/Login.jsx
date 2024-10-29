@@ -19,12 +19,12 @@ function Login() {
 
     console.log(activeUser);
 
-    // if (activeUser && activeUser.userName !== username) {
-    //   setError("Invalid credentials");
-    //   return;
-    // }
+    if (activeUser && activeUser.userName !== username) {
+      setError("Invalid credentials");
+      return;
+    }
 
-    // navigate("/");
+    navigate("/");
   }
 
   return (
